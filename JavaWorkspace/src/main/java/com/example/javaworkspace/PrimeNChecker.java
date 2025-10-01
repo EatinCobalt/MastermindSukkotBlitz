@@ -1,10 +1,11 @@
 package com.example.javaworkspace;
 
+import java.util.Scanner;
 
-public class Task4 {
+public class PrimeNChecker {
     public static void main(String[] args) {
-        //scanner doesnt work for some reason so number is entered here
-        int n = 17;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         if (isPrime(n)) {
             System.out.println("number is prime");
         }
