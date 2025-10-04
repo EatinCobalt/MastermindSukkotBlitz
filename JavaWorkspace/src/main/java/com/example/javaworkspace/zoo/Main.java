@@ -6,8 +6,7 @@ public class Main {
         Cat cat = new Cat("Bob", "meow", "fish");
         Bird bird = new Bird("Pierre", "chirp", "seeds");
         Animal[] animals = {dog, cat, bird};
-        for (int i = 0; i < 3; i++) {
-            Animal currentAnimal = animals[i];
+        for (Animal currentAnimal : animals) {
             currentAnimal.speak();
             currentAnimal.eat();
         }

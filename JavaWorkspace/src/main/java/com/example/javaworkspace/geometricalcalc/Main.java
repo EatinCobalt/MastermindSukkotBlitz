@@ -6,8 +6,7 @@ public class Main {
         Rectangle rectangle = new Rectangle("JKMN", 2, 4);
         Triangle triangle = new Triangle("ABC", 6, 7);
         Shape[] shapes = {circle, rectangle, triangle};
-        for (int i = 0; i < 3; i++) {
-            Shape currentShape = shapes[i];
+        for (Shape currentShape : shapes) {
             System.out.println(currentShape.getName() + " area  = " + currentShape.area() + " square units");
             if (currentShape == triangle) {
                 System.out.println("couldnt calculate " + currentShape.getName() + " perimeter");
